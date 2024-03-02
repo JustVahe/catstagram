@@ -24,23 +24,6 @@ const Catlist = () => {
         else handleInfinite();
     }, {})
 
-    // const handleInfinite = (isSend : boolean, sendHandler: (poxos:boolean) => void) => {
-    
-    //     const bodyHeight = document.body.offsetHeight;
-    //     const scrollHeight = window.scrollY;
-    //     const windowHeight = window.innerHeight;
-
-    //     if (isSend && (scrollHeight + windowHeight >= bodyHeight - 100)) {
-    //         sendHandler(false)
-    //         fetch("https://api.thecatapi.com/v1/images/search?limit=10")
-    //         .then(res => res.json())
-    //         .then(data => {
-    //             dispatch(addCats(data));
-    //             sendHandler(true);
-    //         })
-    //     }
-    // }
-
      function infiniteHandler() {
     
         const lastCard = cats && document.getElementById(`${cats[cats.length - 1].id}`);
